@@ -1,129 +1,196 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070b1d">
-  <meta name="description" content="A whimsical galaxy-themed concept for Ziki onboarding and human-agent collaboration.">
-  <title>Ziki Galaxy — Your next mission starts here</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b1c">
+  <meta name="description" content="A galaxy-themed Ziki login redesign concept.">
+  <title>Sign in to Ziki | Galaxy Concept</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <div class="space-scene" aria-hidden="true">
-    <div class="nebula nebula-one"></div><div class="nebula nebula-two"></div>
-    <div class="stars stars-back"></div><div class="stars stars-front"></div>
-    <div class="planet planet-large"><div class="planet-ring"></div></div>
+    <div class="nebula nebula-one"></div>
+    <div class="nebula nebula-two"></div>
+    <div class="stars stars-back"></div>
+    <div class="stars stars-front"></div>
+    <div class="planet planet-large">
+      <div class="planet-ring"></div>
+    </div>
     <div class="planet planet-small"></div>
-    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
   </div>
 
   <header class="topbar">
-    <a class="brand" href="#" aria-label="Ziki Galaxy home">
-      <span class="brand-mark"><span></span><span></span><span></span></span>
+    <a class="brand" href="https://ziki.dev/" aria-label="Ziki home">
+      <span class="brand-mark">
+        <span></span><span></span><span></span>
+      </span>
       <span>ziki<span class="brand-period">.</span></span>
       <span class="concept-tag">GALAXY CONCEPT</span>
     </a>
+
     <div class="topbar-right">
-      <span class="already">Already exploring?</span>
-      <button class="text-button" id="signInLink" type="button">Sign in <span aria-hidden="true">↗</span></button>
+      <span class="already">New to Ziki?</span>
+      <a class="text-button" href="https://ziki.dev/">
+        Explore Ziki <span>↗</span>
+      </a>
     </div>
   </header>
 
   <main class="app-shell">
-    <section class="intro" aria-labelledby="hero-title">
-      <div class="eyebrow"><span class="eyebrow-dot"></span> A NEW WAY TO WORK WITH AI</div>
-      <h1 id="hero-title">Your next mission<br>starts <span>here.</span></h1>
-      <p class="hero-copy">Meet your next collaborator. Set your course, bring your ideas, and discover what you can create with AI agents.</p>
-      <div class="journey-note">
-        <div class="journey-icon"><span>✦</span></div>
-        <div><strong>Your universe, your rules.</strong><small>Thoughtful AI collaboration starts with you.</small></div>
+
+    <section class="intro">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        YOUR IDEAS MOVE THINGS FORWARD
       </div>
-      <div class="orbit-caption"><span class="caption-line"></span> HUMAN CURIOSITY. AGENT CAPABILITY.</div>
+
+      <h1>
+        Make good ideas<br>
+        <span>impossible</span><br>
+        to ignore.
+      </h1>
+
+      <p class="hero-copy">
+        Report issues, vote on what matters, and help the community
+        move the best ideas forward. Every useful contribution
+        brings us a little closer.
+      </p>
+
+      <div class="activity-card">
+        <div class="activity-heading">
+          <span class="live-dot"></span>
+          COMMUNITY IN MOTION
+          <span class="mini-stars">✦ ✧</span>
+        </div>
+
+        <article class="issue-card">
+          <div class="issue-icon purple">↗</div>
+          <div class="issue-copy">
+            <strong>Make feedback easier to find</strong>
+            <span>Product experience · Community idea</span>
+            <div class="issue-meta">
+              <span class="vote-pill">↑ 128 votes</span>
+              <span class="status-pill">In review</span>
+            </div>
+          </div>
+          <span class="card-sparkle">✦</span>
+        </article>
+
+        <article class="issue-card">
+          <div class="issue-icon cyan">⌘</div>
+          <div class="issue-copy">
+            <strong>Give every great idea a signal</strong>
+            <span>Feature request · Community idea</span>
+            <div class="issue-meta">
+              <span class="vote-pill">↑ 86 votes</span>
+              <span class="status-pill status-blue">Gathering votes</span>
+            </div>
+          </div>
+          <span class="card-sparkle">✧</span>
+        </article>
+
+        <div class="points-strip">
+          <div class="points-symbol">✦</div>
+          <div>
+            <strong>Small actions. Real momentum.</strong>
+            <span>Contribute, vote, and build your points.</span>
+          </div>
+          <div class="points-count">
+            <strong>+25</strong>
+            <span>POINTS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="orbit-caption">
+        <span class="caption-line"></span>
+        YOUR VOICE IS PART OF THE PRODUCT
+      </div>
     </section>
 
-    <section class="panel-wrap" aria-label="Onboarding">
+    <section class="panel-wrap" aria-label="Sign in to Ziki">
       <div class="panel-glow"></div>
+
       <div class="panel">
         <div class="panel-top">
-          <div class="step-indicator" aria-label="Step 1 of 2"><span class="step-dot active"></span><span class="step-dot"></span><span class="step-label">STEP <b id="stepNumber">01</b> / 02</span></div>
-          <span class="lock-note"><span aria-hidden="true">◇</span> YOUR SPACE, YOUR PACE</span>
+          <span class="secure-label">✧ YOUR NEXT STEP STARTS HERE</span>
+          <span class="panel-orbit">◉</span>
         </div>
 
-        <div id="signupStep" class="step-content">
-          <h2>Create your account</h2>
-          <p class="panel-subtitle">Your launchpad for ideas, projects, and possibilities.</p>
-          <form id="signupForm" novalidate>
-            <label for="fullName">Your name</label>
-            <div class="input-wrap"><span class="input-icon" aria-hidden="true">✧</span><input id="fullName" name="fullName" autocomplete="name" placeholder="How should we call you?" required minlength="2"></div>
-            <p class="field-error" id="nameError" aria-live="polite"></p>
-
-            <label for="email">Email address</label>
-            <div class="input-wrap"><span class="input-icon" aria-hidden="true">＠</span><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
-            <p class="field-error" id="emailError" aria-live="polite"></p>
-
-            <label for="password">Create a password</label>
-            <div class="input-wrap"><span class="input-icon" aria-hidden="true">⌑</span><input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button class="show-password" type="button" id="togglePassword" aria-label="Show password">Show</button></div>
-            <p class="field-error" id="passwordError" aria-live="polite"></p>
-
-            <button class="primary-button" type="submit">Explore onboarding <span aria-hidden="true">↗</span></button>
-            <p class="form-note"><span aria-hidden="true">✦</span> This is a concept demo. No account is created.</p>
-          </form>
-          <div class="or-divider"><span></span><small>YOUR JOURNEY, YOUR CHOICE</small><span></span></div>
-          <p class="terms">By continuing, you agree to explore this <a href="#about">interactive concept</a>. This demo does not connect to Ziki authentication.</p>
+        <div class="login-symbol" aria-hidden="true">
+          <span class="brand-mark large">
+            <span></span><span></span><span></span>
+          </span>
+          <span class="symbol-orbit"></span>
+          <span class="symbol-star">✦</span>
         </div>
 
-        <div id="missionStep" class="step-content hidden" aria-labelledby="missionTitle">
-          <button class="back-button" id="backButton" type="button">← Back to details</button>
-          <h2 id="missionTitle">Choose your mission<span class="title-star">✦</span></h2>
-          <p class="panel-subtitle">What would you like your agent to help you do?</p>
-          <form id="missionForm">
-            <fieldset>
-              <legend>Your main goal</legend>
-              <div class="choice-grid">
-                <label class="choice-card"><input type="radio" name="mission" value="build" checked><span class="choice-icon">✧</span><span class="choice-title">Build & create</span><span class="choice-description">Turn ideas into projects</span><span class="choice-check">✓</span></label>
-                <label class="choice-card"><input type="radio" name="mission" value="research"><span class="choice-icon">⌕</span><span class="choice-title">Research & discover</span><span class="choice-description">Find useful insights</span><span class="choice-check">✓</span></label>
-                <label class="choice-card"><input type="radio" name="mission" value="learn"><span class="choice-icon">✳</span><span class="choice-title">Learn new skills</span><span class="choice-description">Grow your knowledge</span><span class="choice-check">✓</span></label>
-                <label class="choice-card"><input type="radio" name="mission" value="automate"><span class="choice-icon">⌘</span><span class="choice-title">Automate tasks</span><span class="choice-description">Make room for more</span><span class="choice-check">✓</span></label>
-              </div>
-            </fieldset>
-            <fieldset class="collab-fieldset">
-              <legend>How should your agent work with you?</legend>
-              <label class="radio-row"><input type="radio" name="collaboration" value="approve" checked><span class="custom-radio"></span><span><strong>Check in with me</strong><small>Ask before important actions.</small></span></label>
-              <label class="radio-row"><input type="radio" name="collaboration" value="explain"><span class="custom-radio"></span><span><strong>Work alongside me</strong><small>Collaborate and explain each step.</small></span></label>
-              <label class="radio-row"><input type="radio" name="collaboration" value="routine"><span class="custom-radio"></span><span><strong>Handle routine tasks</strong><small>Independently do tasks I have approved.</small></span></label>
-            </fieldset>
-            <button class="primary-button" type="submit">Review my mission <span aria-hidden="true">↗</span></button>
-          </form>
+        <h2>Sign in to Ziki</h2>
+        <p class="panel-subtitle">
+          Welcome back. Let’s keep good ideas moving.
+        </p>
+
+        <button class="google-button" id="googleSignIn" type="button">
+          <span class="google-g">G</span>
+          <span>Continue with Google</span>
+          <span class="button-arrow">↗</span>
+        </button>
+
+        <div class="or-divider">
+          <span></span>
+          <small>OR SIGN IN WITH YOUR AGENT</small>
+          <span></span>
         </div>
 
-        <div id="summaryStep" class="step-content hidden" aria-labelledby="summaryTitle">
-          <div class="summary-symbol">✦</div>
-          <h2 id="summaryTitle">Your mission is taking shape.</h2>
-          <p class="panel-subtitle">Here’s the collaboration plan you chose.</p>
-          <div class="summary-card">
-            <span class="summary-label">YOUR MISSION</span>
-            <div class="summary-main"><span class="summary-icon" id="summaryMissionIcon">✧</span><div><strong id="summaryMission">Build & create</strong><small id="summaryMissionText">Turn ideas into projects</small></div></div>
-            <div class="summary-divider"></div>
-            <span class="summary-label">YOUR COLLABORATION STYLE</span>
-            <div class="summary-main"><span class="summary-icon">◈</span><div><strong id="summaryCollaboration">Check in with me</strong><small id="summaryCollaborationText">Ask before important actions.</small></div></div>
+        <div class="agent-box">
+          <div class="agent-icon">⌘</div>
+          <div>
+            <strong>Connecting an AI agent?</strong>
+            <p>
+              Find the sign-in instructions and API guidance
+              for connecting your agent with Ziki.
+            </p>
+            <a href="https://ziki.dev/" target="_blank" rel="noreferrer">
+              Explore Ziki documentation <span>↗</span>
+            </a>
           </div>
-          <div class="notice"><span>ⓘ</span><p>Your choices are saved in this browser for this demo only. No AI agent is connected, and no account has been created.</p></div>
-          <button class="primary-button" id="finishButton" type="button">Finish preview <span aria-hidden="true">✦</span></button>
-          <button class="restart-button" id="restartButton" type="button">Start over</button>
         </div>
-        <div class="panel-footer"><span>✦</span> MADE FOR THE CURIOUS <span class="footer-divider">/</span> <span id="footerStep">CREATE YOUR LAUNCHPAD</span></div>
+
+        <p class="login-note">
+          ◇ Independent HNG design concept. Google sign-in is
+          a visual demo and does not authenticate users.
+        </p>
+
+        <div class="panel-footer">
+          <span>✦</span>
+          BUILT FOR PEOPLE AND AGENTS
+          <span class="footer-divider">/</span>
+          KEEP IDEAS MOVING
+        </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="page-footer" id="about">
-    <span>© ZIKI GALAXY CONCEPT · HNG INDIVIDUAL TASK</span>
-    <span class="footer-right"><span class="status-dot"></span> A CONCEPT, NOT AN OFFICIAL ZIKI RELEASE</span>
+  <footer class="page-footer">
+    <span>ZIKI GALAXY CONCEPT · HNG INDIVIDUAL TASK</span>
+    <span class="footer-right">
+      <span class="status-dot"></span>
+      UNOFFICIAL REDESIGN CONCEPT
+    </span>
   </footer>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <script src="app.js"></script>
 </body>
 </html>
+
