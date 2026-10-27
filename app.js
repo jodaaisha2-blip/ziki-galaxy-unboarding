@@ -214,6 +214,27 @@ function initializeBrowserTheme(browserThemeCacheKey) {
     const themes = JSON.parse(
       window.localStorage.getItem(browserThemeCacheKey),
     );
+    // Interactive cursor sparkles
+document.addEventListener("pointermove", (event) => {
+  if (event.pointerType === "touch") return;
+
+  const sparkle = document.createElement("span");
+  sparkle.textContent = Math.random() > 0.5 ? "✦" : "✧";
+
+  Object.assign(sparkle.style, {
+    position: "fixed",
+    left: `${event.clientX}px`,
+    top: `${event.clientY}px`,
+    color: Math.random() > 0.5 ? "#8ddcff" : "#a99bff",
+    fontSize: `${Math.random() * 10 + 8}px`,
+    pointerEvents: "none",
+    zIndex: "9999",
+    animation: "sparkleFade 700ms ease-out forwards"
+  });
+
+  document.body.appendChild(sparkle);
+  setTimeout(() => sparkle.remove(), 700);
+});
     if (
       typeof themes?.css === "string" &&
       typeof themes.light === "boolean" &&
