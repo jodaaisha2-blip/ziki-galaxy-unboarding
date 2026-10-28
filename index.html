@@ -179,6 +179,42 @@
     </section>
 
   </main>
+  
+<section class="agent-companion" id="agent-companion">
+  <div class="companion-heading">
+    <span class="companion-icon">✦</span>
+    <div>
+      <p class="companion-label">YOUR GALAXY ASSISTANT</p>
+      <h2>Work with your agent</h2>
+      <p>You're in control. Your agent explains its plan before acting.</p>
+    </div>
+  </div>
+
+  <label for="agent-task">What would you like your agent to help with?</label>
+
+  <select id="agent-task">
+    <option value="issue">Find an issue to work on</option>
+    <option value="research">Research a topic</option>
+    <option value="plan">Break a task into steps</option>
+  </select>
+
+  <button type="button" id="propose-plan">
+    ✨ Ask agent to propose a plan
+  </button>
+
+  <div id="agent-response" class="agent-response" aria-live="polite">
+    <p class="response-kicker">AGENT STATUS</p>
+    <p id="agent-message">Your agent is ready. Choose a task to begin.</p>
+    <div id="agent-actions" class="agent-actions" hidden>
+      <button type="button" id="approve-plan">Approve plan</button>
+      <button type="button" id="reject-plan">Reject plan</button>
+    </div>
+  </div>
+
+  <p class="companion-note">
+    Prototype demo: responses are simulated. No real agent actions are performed.
+  </p>
+</section>
 
   <footer class="page-footer">
     <span>ZIKI GALAXY CONCEPT · HNG INDIVIDUAL TASK</span>
