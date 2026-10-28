@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   // Cursor-following galaxy sparkles
   let lastSparkleTime = 0;
